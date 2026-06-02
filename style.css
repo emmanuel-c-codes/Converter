@@ -1,0 +1,7 @@
+/* style.css - Creating a professional user interface */
+body { font-family: 'Segoe UI', sans-serif; background: #0f172a; color: white; display: flex; flex-direction: column; align-items: center; padding: 20px; }
+.container { background: #1e293b; padding: 30px; border-radius: 16px; width: 100%; max-width: 450px; box-shadow: 0 10px 25px rgba(0,0,0,0.3); }
+h2 { text-align: center; color: #38bdf8; }
+input, select { width: 100%; padding: 12px; margin: 10px 0; border-radius: 8px; border: none; box-sizing: border-box; }
+button { width: 100%; padding: 12px; background: #38bdf8; color: white; border: none; border-radius: 8px; font-weight: bold; cursor: pointer; }
+.ad-slot { background: #334155; height: 100px; margin: 20px 0; display: flex; align-items: center; justify-content: center; border: 1px dashed #64748b; color: #94a3b8; }

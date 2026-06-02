@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Global Currency Tracker</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Live Tracker</h2>
+        <div class="ad-slot">Top Ad (Banner)</div>
+        
+        <input type="number" id="amount" placeholder="Enter amount">
+        <select id="currency">
+            <option value="USD">USD to NGN</option>
+            <option value="EUR">EUR to NGN</option>
+            <option value="BTC">BTC to USD</option>
+        </select>
+        <button onclick="calculate()">Convert Now</button>
+        
+        <div id="result" style="margin-top:20px; font-size: 1.2em; text-align: center;"></div>
+        
+        <div class="ad-slot">Bottom Ad (Interstitial)</div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
