@@ -4,12 +4,20 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Global Currency Tracker</title>
-    
     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4130889401766914" crossorigin="anonymous"></script>
-    
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+
+    <header class="main-header">
+        <h1>Global Currency Tracker</h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="privacy.html">Privacy</a>
+        </nav>
+    </header>
+
     <div class="container">
         <h2>Live Tracker</h2>
         
@@ -19,9 +27,11 @@
         <select id="currency">
             <option value="USD">USD to NGN</option>
             <option value="EUR">EUR to NGN</option>
-            <option value="BTC">BTC to USD</option>
+            <option value="GBP">GBP to USD</option>
         </select>
         <button onclick="calculate()">Convert Now</button>
+        
+        <div id="loader" class="spinner" style="display: none;"></div>
         
         <div id="result"></div>
         

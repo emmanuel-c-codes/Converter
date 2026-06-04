@@ -1,61 +1,56 @@
-* {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-}
+* { box-sizing: border-box; margin: 0; padding: 0; }
 
-body {
-    font-family: 'Segoe UI', sans-serif;
-    background: #0f172a;
-    color: white;
-    width: 100%;
-    min-height: 100vh;
-    display: block; /* Ensures natural flow */
-    padding: 10px;
-}
+body { font-family: 'Segoe UI', sans-serif; background: #0f172a; color: white; width: 100%; min-height: 100vh; padding: 10px; }
 
-.container {
-    background: #1e293b;
-    padding: 20px;
-    width: 100%;
-    max-width: 500px; /* Looks good on desktop and phone */
-    margin: 10px auto; /* Centered with 10px space at top */
-    border-radius: 12px;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.3);
-}
+.container { background: #1e293b; padding: 20px; width: 100%; max-width: 500px; margin: 10px auto; border-radius: 12px; box-shadow: 0 4px 10px rgba(0,0,0,0.3); }
 
 h2 { text-align: center; color: #38bdf8; margin-bottom: 20px; }
 
-input, select, button {
-    display: block;
-    width: 100%;
-    padding: 15px;
-    margin-bottom: 15px;
-    border-radius: 8px;
-    border: none;
-    font-size: 16px; /* Prevents auto-zoom on mobile */
-    box-sizing: border-box;
-}
+input, select, button { display: block; width: 100%; padding: 15px; margin-bottom: 15px; border-radius: 8px; border: none; font-size: 16px; box-sizing: border-box; }
 
-button { background: #38bdf8; color: white; font-weight: bold; cursor: pointer; }
+button { background: #38bdf8; color: white; font-weight: bold; cursor: pointer; transition: 0.3s; }
+button:hover { background: #0ea5e9; }
 
+/* Add this if you want your result area to look clean even with errors */
 #result { 
     margin: 20px 0; 
     font-size: 1.2em; 
     text-align: center; 
     font-weight: bold; 
     color: #ffffff; 
+    opacity: 0; 
+    transition: opacity 0.5s; 
+    min-height: 1.5em; /* Keeps the layout from jumping */
+}
+.ad-slot { width: 100%; min-height: 100px; background: #334155; margin-bottom: 20px; display: flex; align-items: center; justify-content: center; color: #94a3b8; border: 1px dashed #64748b; border-radius: 8px; }
+
+/* Spinner Style */
+.spinner { border: 4px solid #f3f3f3; border-top: 4px solid #38bdf8; border-radius: 50%; width: 30px; height: 30px; animation: spin 1s linear infinite; margin: 20px auto; }
+@keyframes spin { 0% { transform: rotate(0deg); } 100% { transform: rotate(360deg); } }
+
+
+/* Header and Navigation Styles */
+.main-header {
+    text-align: center;
+    padding: 20px;
+    background: #1e293b;
+    margin-bottom: 20px;
+    border-bottom: 3px solid #38bdf8;
 }
 
-.ad-slot {
-    width: 100%;
-    min-height: 100px;
-    background: #334155;
-    margin-bottom: 20px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+.main-header h1 {
+    color: #38bdf8;
+    margin-bottom: 10px;
+    font-size: 1.5em;
+}
+
+.main-header nav a {
     color: #94a3b8;
-    border: 1px dashed #64748b;
-    border-radius: 8px;
+    text-decoration: none;
+    margin: 0 10px;
+    font-weight: 500;
+}
+
+.main-header nav a:hover {
+    color: #ffffff;
 }
